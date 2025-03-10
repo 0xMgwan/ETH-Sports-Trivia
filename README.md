@@ -9,8 +9,8 @@ ETH Sports Trivia is a web3 application that allows users to test their sports k
 ## 🚀 Live Demo
 
 The application is deployed on the Internet Computer mainnet and can be accessed at:
-- Frontend: [https://3iwxl-diaaa-aaaad-qg62q-cai.ic0.app](https://3iwxl-diaaa-aaaad-qg62q-cai.ic0.app)
-- Backend: [https://3pxr7-oqaaa-aaaad-qg62a-cai.ic0.app](https://3pxr7-oqaaa-aaaad-qg62a-cai.ic0.app)
+- Frontend: [https://3iwxl-diaaa-aaaad-qg62q-cai.ic0.app](https://3iwxl-diaaa-aaaad-qg62q-cai.icp0.io/)
+- Backend: [https://3pxr7-oqaaa-aaaad-qg62a-cai.ic0.app](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=3pxr7-oqaaa-aaaad-qg62a-cai)
 
 ## ✨ Features
 
