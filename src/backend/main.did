@@ -1,0 +1,10 @@
+type PlayerData = record {
+    score: nat;
+    correctAnswers: nat;
+    totalAnswers: nat;
+};
+
+service : {
+    "submitAnswer": (bool) -> (bool);
+    "getPlayerStats": (principal) -> (opt PlayerData) query;
+}

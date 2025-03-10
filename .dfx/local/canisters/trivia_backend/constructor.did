@@ -1,0 +1,4 @@
+service : {
+  getEthAddress: () -> (opt text);
+  verifySiweAndRegister: (text, text, text) -> (bool);
+}

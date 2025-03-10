@@ -1,21 +1,22 @@
 {
   "name": "eth-sports-trivia",
-  "version": "1.0.0",
-  "description": "A decentralized sports trivia game",
-  "main": "src/frontend/index.js",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "start": "dfx start --clean --background",
-    "deploy": "dfx deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.9.0",
+    "buffer": "^6.0.3",
     "ethers": "^5.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.0"
+    "siwe": "^2.1.4"
   },
   "devDependencies": {
-    "hardhat": "^2.17.0"
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^4.5.0"
   }
 }

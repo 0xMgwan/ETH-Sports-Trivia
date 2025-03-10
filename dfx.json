@@ -1,15 +1,20 @@
 {
   "canisters": {
     "trivia_backend": {
-      "main": "src/backend/main.mo",
+      "main": "src/trivia_backend/main.mo",
       "type": "motoko"
     },
     "trivia_frontend": {
-      "dependencies": ["trivia_backend"],
+      "dependencies": [
+        "trivia_backend"
+      ],
       "frontend": {
-        "entrypoint": "src/frontend/index.html"
+        "entrypoint": "src/index.html"
       },
-      "source": ["src/frontend"],
+      "source": [
+        "src/trivia_frontend/assets",
+        "dist/"
+      ],
       "type": "assets"
     }
   },
@@ -17,6 +22,12 @@
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "networks": {
+    "ic": {
+      "providers": ["https://mainnet.dfinity.network"],
+      "type": "persistent"
     }
   },
   "version": 1
