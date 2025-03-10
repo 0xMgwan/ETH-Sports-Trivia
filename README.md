@@ -1,6 +1,6 @@
-# ETH Sports Trivia
+# Trivia.eth
 
-A decentralized sports trivia game built on the Internet Computer Protocol (ICP) with Ethereum wallet integration.
+A decentralized trivia P2E game built on the Internet Computer Protocol (ICP) with Ethereum wallet integration.
 
 ## 🏆 Overview
 
@@ -43,3 +43,69 @@ The application is deployed on the Internet Computer mainnet and can be accessed
 git clone https://github.com/yourusername/eth-sports-trivia.git
 cd eth-sports-trivia
 ```
+2. 2. Install dependencies:
+3. Start the local Internet Computer replica:
+4. Deploy the canisters locally:
+5. Open the application in your browser:
+## 🌐 Deployment to ICP Mainnet
+The application is already deployed to the ICP mainnet. If you want to deploy your own version:
+
+1. Ensure you have ICP tokens and a cycles wallet set up:
+```bash
+$ bash
+dfx identity get-wallet --network=ic
+dfx wallet --network=ic balance
+ ```
+
+2. Top up your wallet with cycles:
+```bash
+$ bash
+dfx ledger --network=ic top-up $(dfx identity get-wallet) --amount 1.0
+ ```
+
+3. Deploy to mainnet:
+```bash
+$ bash
+dfx deploy --network=ic
+ ```
+## 🔐 Ethereum Wallet Integration
+ETH Sports Trivia uses Sign-in with Ethereum (SIWE) to authenticate users:
+
+1. Users connect their Ethereum wallet (e.g., MetaMask)
+2. The app creates a SIWE message with the user's address and a nonce
+3. Users sign the message with their wallet
+4. The signature is verified on the ICP backend
+5. Upon successful verification, users can interact with the app
+This integration provides a seamless experience for Ethereum users to interact with the Internet Computer Protocol.
+
+## 🧪 Testing
+Run the test suite:
+
+```bash
+$ bash
+npm test
+ ```
+
+## 🛡️ Security Considerations
+- All wallet signatures are verified on the backend
+- User data is stored securely on the Internet Computer
+- No private keys or sensitive information is stored on the frontend
+- Rate limiting is implemented to prevent abuse
+  
+## 🚧 Roadmap
+- Add more sports categories
+- Implement multiplayer mode
+- Add NFT rewards for top players
+- Create mobile app version
+- Integrate with other wallet providers
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
