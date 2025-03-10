@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "trivia_backend": {
+      "main": "src/backend/main.mo",
+      "type": "motoko"
+    },
+    "trivia_frontend": {
+      "dependencies": ["trivia_backend"],
+      "frontend": {
+        "entrypoint": "src/frontend/index.html"
+      },
+      "source": ["src/frontend"],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
